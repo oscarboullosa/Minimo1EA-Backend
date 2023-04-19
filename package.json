@@ -16,7 +16,7 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.0",
-    "mongoose": "^7.0.3",
+    "mongoose": "^7.0.4",
     "mongoose-paginate-v2": "^1.7.1",
     "multer": "^1.4.5-lts.1"
   },
@@ -27,5 +27,13 @@
     "@types/mongoose": "^5.11.97",
     "@types/multer": "^1.4.7"
   },
-  "description": "We are going to use:"
+  "description": "We are going to use:",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscarboullosa/Minimo1EA-Backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oscarboullosa/Minimo1EA-Backend/issues"
+  },
+  "homepage": "https://github.com/oscarboullosa/Minimo1EA-Backend#readme"
 }
