@@ -9,7 +9,7 @@ const getGestorCtrl=async({params}:Request,res:Response)=>{
         const data=response ? response:"NOT_FOUND";
         res.send(data);
     } catch (error) {
-        handleHttp(res,"ERROR_GET_LOCATION");
+        handleHttp(res,"ERROR_GET_GESTOR");
     }
 };
 
@@ -18,7 +18,7 @@ const getGestoresCtrl=async(req:Request,res:Response)=>{
         const response=await getGestores();
         res.send(response);
     } catch (error) {
-        handleHttp(res,"ERROR_GET_LOCATIONS");
+        handleHttp(res,"ERROR_GET_GESTORES");
     }
 };
 
@@ -30,7 +30,7 @@ const updateGestorCtrl=async ({params,body}:Request,res:Response)=>{
         res.send(response);
     }
     catch(e){
-        handleHttp(res,"ERROR_UPDATE_LOCATION");
+        handleHttp(res,"ERROR_UPDATE_GESTOR");
     }
 };
 
@@ -39,7 +39,7 @@ const postGestorCtrl=async ({body}:Request,res:Response)=>{
         const response=await insertGestor(body);
         res.send(response);
     } catch (error) {
-        handleHttp(res,"ERROR_POST_LOCATION");
+        handleHttp(res,"ERROR_POST_GESTOR");
     }
 };
 
